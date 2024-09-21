@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- ESTABLECE EL JUEGO DE CARACTERES -->
+    <meta charset="UTF-8" />
+    <!-- ETIQUETA PARA HACER RESPONSIVE LA PÁGINA, ADAPTACIÓN DE ESCALAS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ESTABLECE UNA DESCRIPCIÓN DE LA PÁGINA -->
+    <meta name="description" content="Curso Html tema 14" />
+    <!-- ESTABLECE PALABRAS CLAVE PARA SER LOCALIZADA LA PÁGINA POR LOS MOTORES DE BÚSQUEDA -->
+    <meta name="keywords" content="HTML, CSS, JavaScript, Meta, Responsive" />
+    <!-- ESTABLECE EL AUTOR DEL ARCHIVO -->
+    <meta name="author" content="Inmaculada García" />
+
+    <title>Tema 18</title>
+    <!-- ICONO DE VENTANA -->
+    <link rel="icon" type="image/x-icon" href="imagenes/favicon.ico" />
+    <!-- HOJA DE ESTILOS EXTERNA-->
+    <link rel="stylesheet" href="estilos/estilos.css" />
+</head>
+<body>
+    <h2>FORMULARIO CON DISTINTOS TIPOS DE CAMPO</h2>
+    <form action="https://www.w3schools.com/action_page.php" target="_blank">
+        <label for="idNombre">Nombre:</label><br>
+        <!-- CAMPO TIPO TEXTO -->
+        <input type="text" id="idNombre" name="idNombre"><br>
+        <br>
+        <!-- CAMPO TIPO PASSWORD -->
+        <label for="idPwd">Password:</label><br>
+        <input type="password" id="idPwd" name="idPwd">
+        <br><br>
+        <!-- CAMPO DE RESETEO -->
+        <input type="reset" value="Resetear">
+        <br><br>
+        <!-- CAMPO TIPO RADIO BUTTON -->
+        <input type="radio" id="idHtml" name="lenguaje" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="idCss" name="lenguaje" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="idScript" name="lenguaje" value="JavaScript">
+        <label for="JavaScript">JavaScript</label><br>
+        <br>
+        <!-- CAMPO TIPO CHECKBOX -->
+        <input type="checkbox" id="idAzul" name="idAzul" value="Azul">
+        <label for="idAzul">Azul</label><br>
+        <input type="checkbox" id="idRojo" name="idRojo" value="Rojo" checked>
+        <label for="idRojo">Rojo</label><br>
+        <input type="checkbox" id="idVerde" name="idVerde" value="Verde">
+        <label for="idVerde">Verde</label>
+        <br><br>
+        <!-- CAMPO TIPO COLOR -->
+        <label for="idColor">Seleccione su color favorito:</label>
+        <input type="color" id="idColor" name="idColor">
+        <br><br>
+        <!-- CAMPO TIPO FECHA(DATE) -->
+        <label for="idNacimiento">Fecha de Nacimiento:</label>
+        <input type="date" id="idNacimiento" name="idNacimiento">
+        <br><br>
+        <!-- CAMPO TIPO FECHA Y HORA, PARA UNA REUNION POR EJEMPLO -->
+        <label for="idReunión">Fecha y hora de la reunión:</label>
+        <!-- puedes tener atrib min y max para acotar la seleccion del usuario -->
+        <input type="datetime-local" id="idReunion" name="idReunion" min="2024-04-01T00:00" max="2024-04-30T23:59">
+        <br><br>
+        <!-- CAMPO TIPO EMAIL -->
+        <label for="idEmail">Introduzca su correo electrónico:</label>
+        <input type="email" id="idEmail" name="idEmail">
+        <br><br>
+        <!-- CAMPO TIPO IMAGE COMO BUTTON SUBMIT -->
+        <input type="image"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUExw7EdMoQm1cyK2g9WyGK4ign6nucByF8Q&s"
+            alt="Submit" width="300" height="100">
+        <br><br>
+        <!-- CAMPO TIPO FILE -->
+        <label for="idFile">Selecciona un fichero:</label>
+        <input type="file" id="idFile" name="idFile">
+        <br><br>
+        <!-- informacion que NO quiero que el usuario vea pero que me sirve para identificarlo -->
+        <!-- CAMPO TIPO HIDDEN -->
+        <input type="hidden" id="idCodCliente" name="idCodCliente" value="1689">
+        <br><br>
+        <!-- CAMPO TIPO MONTH -->
+        <label for="idMonth">Selecciona mes y año:</label>
+        <input type="month" id="idMonth" name="idMonth">
+        <br><br>
+        <!-- CAMPO TIPO NUMBER -->
+        <label for="idCantidad">Introduzca un número entero:</label>
+        <input type="number" id="idCantidad" name="idCantidad">
+        <br><br>
+        <!-- CAMPO TIPO BUTTON -->
+        <input type="button" onclick="alert('Hola, bienvenido!')" value="Púlsame">
+        <br><br>
+        <!-- ENVIO DEL FORMULARIO -->
+        <input type="submit" value="Enviar" class="form-submit-button">
+        
+    </form>
+</body>
+</html>

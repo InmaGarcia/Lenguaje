@@ -1,0 +1,68 @@
+/* A todas las cajas ponemos la propiedad del cálculo del width del elemento: 
+padding+border => formar parte del ancho de la caja  */
+/* border-box es para que coja todas las cajas de mi pagina tengan en cuenta el ancho de la caja para el contenido */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilo para la cabeceray el pie */
+
+header, footer {
+    background-color: #4f6886;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+/* Crea alineación a la izq, una caja al lado de la otra */
+
+nav {
+    float: left;
+    width: 30%;
+    height: 300px; /* solo para demostracion, debe ser quitado*/
+    background: #a8d4ee;
+    padding: 20px;
+}
+
+/* Estilo de la lista del menú de navegación */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* También el float left para dejar la caja del artículo alineado a la izquierda */
+
+article{
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #f1f1f1;
+    height: 300px; /* solo para demostracion, debe ser quitado*/
+}
+
+/* Elimina el float despues de la sección */
+/* content: añade blanco después de sección */
+/* display: table: muestra información en formato tabla aunque no sea una tabla */
+/*clear: both elimina el comportamiento de float anterior*/
+
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout: se extienden al 100% para tamaños menores de 600px */
+/* aqui estamos diciendo con media que para medias con maximo-anchura 600px 
+debe cambiar ciertas partes de la pagina deben reubicarse*/
+@media (max-width:600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}

@@ -1,0 +1,47 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 10px;
+    padding: 15px;
+    background-color: rgb(199, 197, 197);
+}
+
+h2 {
+    color: #4d77ca;
+    text-align: center;
+}
+
+textarea, button, .form-submit-button{
+    padding: 10px;
+    background-color: rgb(51, 165, 165);
+    color:white;
+    border-radius: 20px;
+    border: solid 5px rgb(131, 72, 29);
+ }
+ 
+ 
+ input[type="submit"], input[type="reset"] {
+    padding: 10px;
+    background-color: rgb(71, 25, 9);
+    color:white;
+    border-radius: 10px;
+    border: solid 5px rgb(241, 243, 172);
+ }
+ 
+ fieldset, legend{
+    padding: 10px;
+    background-color: rgb(217, 237, 237);
+    color:rgb(51, 48, 79);
+    border-radius: 10px;
+    border: solid 1px rgb(113, 64, 29);    
+ }
+ 
+ input[type="text"] {
+    padding: 10px;
+    background-color: rgb(86, 142, 162);
+    color:white;
+    border-radius: 10px;
+    border: solid 1px rgb(64, 49, 177);
+    /* Estos margin es para dejar mas espacio entre nombre y apellidos y sus recuadros de texto */
+    margin-top: 5px;
+    margin-bottom: 5px;
+ }

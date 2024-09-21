@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(102, 133, 161);
+    margin: 25px;
+}
+
+aside {
+    background-color: rgb(152, 213, 248);
+    align-items: center;
+    padding: 20px;
+    width: 10%;
+    float: left;
+}
+
+.menu {
+    background-color: rgb(7, 49, 88);
+    border-radius: 15px;
+    padding: 5%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+
+.noticias {
+    align-items: center;
+    text-align: center;
+    background-color: rgb(144, 199, 199);
+    color:antiquewhite;
+}
+
+figcaption{
+    color:rgb(216, 163, 98);
+    margin-left: 10%;
+}
+
+.formularios {
+    background-color: #50D1F7;
+    padding: 10px;
+    color:antiquewhite;
+}
+
+.sede {
+    background-color: #c09859;
+    padding: 10px;
+    color:antiquewhite;
+}
+
+footer {
+    background-color: rgb(48, 63, 77);
+    padding: 10px;
+    color:antiquewhite;
+    text-align: center;
+}

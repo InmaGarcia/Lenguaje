@@ -1,0 +1,36 @@
+body {
+    background-color: lightgoldenrodyellow;
+}
+.encabezado {
+    color: #3c4673;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+}
+.container {
+    background-color: #ddd9bd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+.encabezado2 {
+    color: white;
+    border-radius: 4px;
+    text-align: center;
+}
+.container2 {
+    background-color: #ddd9bd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+.container3 {
+    background-color: burlywood;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 30px;
+}
+.imagen {
+    text-align: center;
+    padding-top: 20px;
+}

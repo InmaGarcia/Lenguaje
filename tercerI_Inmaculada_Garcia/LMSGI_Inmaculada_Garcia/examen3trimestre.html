@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- ESTABLECE EL JUEGO DE CARACTERES -->
+        <meta charset="UTF-8">
+        <!-- ESTIQUETA PARA RESPONSIVE, ADAPTACIÓN DE ESCALAS -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- DESCRIPCIÓN DE LA PÁGINA -->
+        <meta name="description" content="Examen 3º Trimestre">
+        <!-- ESTABLECE PALABRAS CLAVE PARA SER LOCALIZADA LA PÁGINA POR LOS MOTORES DE BÚSQUEDA -->
+        <meta name="keywords" content="html, css, javascript, examen, ceu,daw, dam" />
+        <!-- AUTOR DE LA PÁGINA -->
+        <meta name="author" content="Inmaculada García">
+        <title>Examen 3º Trimestre</title>
+        <!-- FAVICON -->
+        <link rel="icon" type="image/x-icon" href="imagenes/examen.png">
+        <!-- Introduzco la hoja de estilos -->
+        <link rel="stylesheet" href="estilos/estilos.css">
+        
+    </head>
+    <script>
+        function actualizarTexto(texto) {
+          document.getElementById("idMuestraRango").value=texto;
+        }
+      </script>
+<body>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="#Noticias">Noticias</a></li>
+            <li><a href="#Cuestionario">Cuestionario</a></li>
+            <li><a href="#Configuracion">Configuración</a></li>
+            <li><a href="#Sugerencias">Sugerencias</a></li>
+            <li><a href="#Login">Login</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section id="Noticias">
+            <article>
+                <h2>Rafael Nadal vuelve a competir en Barcelona</h2>
+                <figure>
+                    <img src="https://www.cronicabalear.es/access/public/img/noticias/upload/0_1713291379.jpg" alt="Rafa Nadal en el Godo" width="250px" height="200px">
+                    <figcaption>Rafael Nadal en el Godo</figcaption>
+                </figure>
+                <p>El tenista español, Rafa Nadal, muestra su alegría al finalizar su
+                    partido de primera ronda del Barcelona Open Banc Sabadell - Trofeo Conde
+                    de Godó de tenis disputado este martes ante el italiano Flavio Cobolli.
+                    Rafael Nadal ganó (2-6 y 3-6).
+                    </p>
+            </article>
+            <div class="noticias">
+                <div>
+                    <h2>Comienza la Feria de abril de Sevilla</h2>
+                    <figure>
+                        <img src="https://s3.abcstatics.com/abc/www/multimedia/sevilla/2024/04/13/portada_iluminada-U60867637123dC-RWEhRjatrQxE9EM3LcT35vJ-1200x840@diario_abc.jpeg" alt="Portada Feria de Abril de Sevilla" width="250px" height="200px">
+                        <figcaption>Feria de abril de Sevilla</figcaption>
+                    </figure>
+                    <p>A las doce en punto de la noche, las 25.000 bombillas de la portada
+                        de la Feria de Abril de Sevilla se encenderán en el real de Los Remedios
+                        con la prueba del Alumbrado para dar comienzo a una fiesta universal, que
+                        fue declarada de interés turístico internacional en 1980. Antes muchos
+                        sevillanos y visitantes habrán disfrutado ya de la tradicional cena del
+                        Pescaíto, en la que los socios de las casetas vuelven a reencontrarse, a
+                        saborear la típica gastronomía feriante y a vivir una de las mejores
+                        semanas del año.
+                        </p>
+                </div>
+                <div>
+                    <h2>La fortuna del chico de oro de la televisión</h2>
+                    <figure>
+                        <img src="https://content20.lecturas.com/medio/2024/04/16/david-broncano_72686e85_240416101036_1280x720.jpg" alt="David Broncano" width="250px" height="200px">
+                        <figcaption>David Broncano</figcaption>
+                    </figure>
+                    <p>Ha firmado por dos años por TVE a cambio de 28 millones para
+                        competir con Pablo Motos. Su suculento contrato se sumará a su buen
+                        Patrimonio: tiene dos áticos en Madrid y una productora de éxito.
+                        </p>
+                </div>
+            </div>
+        </section>
+      </main>
+    
+     <div class="form1" id="Cuestionario"> 
+        <form action="https://www.w3schools.com/action_page.php">
+        <fieldset>
+            <legend>Cuestionario (Datos personales)</legend>
+
+            <label for="idNombre">* Nombre:</label>
+            <input type="text" id="idNombre" name="Nombre" required />
+            <br><br>
+
+            <label for="idApellidos">* Apellidos:</label>
+            <input type="text" id="idApellidos" name="Apellidos" size="100" required />
+            <br><br>
+
+            <label for="idNacimiento">* Fecha de Nacimiento:</label>
+            <input type="date" id="idNacimiento" name="idNacimiento" min="1900-01-01" required >
+            <br><br>
+
+            <label for="idDireccion">* Dirección:</label>
+            <input type="text" id="idDireccion" name="Direccion" size="120" required />
+            <br><br>
+
+            <label for="idEmail">* Introduzca su correo electrónico:</label>
+            <input type="email" id="idEmail" name="idEmail" required >
+            <br><br>
+
+            <label for="idTelefono">* Teléfono (xxxxxxxxx)</label><br>
+            <input type="tel" id="idTelefono" name="telefono"  pattern="[0-9]{9}" required />
+            <br><br>
+
+            <label for="idCp">Código Postal (xxxxx)</label><br>
+            <input type="tel" id="idCp" name="cp"  pattern="[0-9]{5}"/>
+            <br><br>
+
+            <label for="sexo"><b>Sexo:</b></label>
+            <input type="radio" id="idHombre" name="sexo" value="HOMBRE">
+            <label for="Hombre">Hombre</label>
+            <input type="radio" id="idMujer" name="sexo" value="MUJER">
+            <label for="Mujer">Mujer</label>
+            <br><br>
+
+            <label for="Idiomas">Idiomas:</label>
+            <input type="checkbox" id="idIngles" name="idIngles" value="Ingles" />
+            <label for="Ingles">Inglés</label>
+            <input type="checkbox" id="idFrances" name="idFrances" value="Frances" />
+            <label for="Frances">Francés</label>
+            <input type="checkbox" id="idAleman" name="idAleman" value="Aleman" />
+            <label for="Aleman">Alemán</label>
+            <input type="checkbox" id="idItaliano" name="idItaliano" value="Italiano" />
+            <label for="Italiano">Italiano</label>
+            <input type="checkbox" id="idOtros" name="idOtros" value="Otros" />
+            <label for="Otros">Otros</label>
+            <br><br>
+
+            <input type="submit" value="Enviar" class="form-submit-button" />
+            <input type="reset" value="Limpiar">
+        </form>
+    </div>
+    <div class="form2" id="Configuracion">
+        <form action="https://www.w3schools.com/action_page.php">
+            <fieldset>
+                <legend>Configuración</legend>
+
+                <label for="idFile">Subir imagen:</label>
+                <input type="file" id="idFile" name="idFile">
+                <br><br>
+
+                <label for="idColor">Selecciona color de fondo:</label>
+                <input type="color" id="idColor" name="idColor">
+                <br><br>
+
+                <label for="idContraste"><b>Selecciona el contraste (entre 0 y 100):</b></label><br>
+                <input type="range" id="idContraste" name="contraste" min="0" max="100" step="10" onchange="actualizarTexto(this.value);">
+                <input type="text" id="idMuestraRango" value="" readonly size="3">
+                <br><br>
+
+                <label for="idCantidad">Introduzca un número de refresco (entre 1 a 10) segundos:</label>
+                <input type="number" id="idCantidad" name="idCantidad" min="1" max="10">
+                <br><br>
+
+                <input type="submit" value="Enviar" class="form-submit-button" />
+                <input type="reset" value="Limpiar">        
+        </form>
+    </div>
+    <div class="form3" id="Sugerencias">
+        <form action="https://www.w3schools.com/action_page.php">
+            <fieldset>
+                <legend>Sugerencias</legend>
+                <p>Escribe cualquier sugerencia:</p>
+                <textarea name="idMensaje" rows="10" cols="50"></textarea><br>
+
+                <input type="submit" value="Enviar" class="form-submit-button" />
+                <input type="reset" value="Limpiar">
+        <!-- </form> -->
+    </div>
+    <div class="form4" id="Login">
+        <form action="https://www.w3schools.com/action_page.php">
+            <fieldset>
+                <legend>Login</legend>
+                <label for="idNombre">* Usuario:</label>
+                <input type="text" id="idNombre" name="idNombre" required><br>
+                <br>
+
+                <label for="idPwd">* Password:</label>
+                <input type="password" id="idPwd" name="idPwd" required>
+                <br><br>
+                <input type="submit" value="Iniciar Sesión" class="form-submit-button" />
+                <input type="reset" value="Limpiar">
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2024 Mi página web (Inmaculada García García). Todos los derechos reservados.</p>
+    </footer>
+    <script>
+        actualizarTexto("50")
+    </script>
+</body>
+</html>

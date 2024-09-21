@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- ESTABLECE EL JUEGO DE CARACTERES -->
+    <meta charset="UTF-8">
+    <!-- ESTIQUETA PARA RESPONSIVE, ADAPTACIÓN DE ESCALAS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- DESCRIPCIÓN DE LA PÁGINA -->
+    <meta name="description" content="Sugerencias">
+    <!-- AUTOR DE LA PÁGINA -->
+    <meta name="author" content="Inmaculada García">
+    <title>Sugerencias</title>
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="imagenes/favicon.ico">
+    <!-- Introduzco la hoja de estilos -->
+    <link rel="stylesheet" href="estilos/estilos.css">
+</head>
+<body>
+    <header>             
+            <img src="imagenes/iniciales.png" alt="Iniciales I G" class="logo">
+            <p>Buzón de Sugerencias</p>       
+    </header>
+
+    <form action="https://www.w3schools.com/action_page.php" target="_blank">
+        <div class="formulario">
+            <div> 
+                <label for="idNombre"><b>Nombre*:</b></label><br>   
+                <input type="text" name="idNombre" maxlength="20" required/><br>
+
+                <label for="idApellidos"><b>Apellidos*:</b></label><br>
+                <input type="text" name="idApellidos" maxlength="50"  required/><br>
+
+                <label for="idDireccion"><b>Dirección:</b></label><br>
+                <input type="text" name="idDireccion" /><br>
+                
+                <label for="idLista"><b>Provincia:</b></label><br />
+                <select id="idLista" name="idLista" > 
+                <!-- size="4" multiple, esto es arriba para que aparezcan mas por lista --> 
+                    <option value="Huel">Huelva</option>
+                    <option value="Sev">Sevilla</option>
+                    <option value="Cad">Cádiz</option>
+                    <option value="Mal">Malaga</option>
+                    <option value="Cor">Córdoba</option>
+                    <option value="Jae">Jaén</option>
+                    <option value="Gra">Granada</option>
+                    <option value="Alm">Almería</option>
+                </select><br>
+
+                <label for="telefono"><b>Teléfono*:</b></label><br>
+                <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}" required><br>
+
+                <label for="email"><b>Email*:</b></label><br>
+                <input type="email" id="email" name="email" required><br>
+                
+                <label for="idNacimiento"><b>Fecha de Nacimiento</b></label><br>
+                <input type="date" id="idNacimiento" name="idNacimiento">
+                <br>
+            </div>
+            <div>
+                <label for="sexo"><b>Sexo:</b></label><br>
+                <input type="radio" id="idHombre" name="sexo" value="HOMBRE">
+                <label for="Hombre">Hombre</label><br>
+                <input type="radio" id="idMujer" name="sexo" value="MUJER">
+                <label for="Mujer">Mujer</label><br><br>
+                <label for="AFICIONES"><b>Aficiones:</b></label><br>
+                <table>
+                    <tr>
+                        <td><input type="checkbox" id="idDeporte" name="idDeporte" value="Deporte">
+                        <label for="idDeporte">Deporte</label></td>
+                        <td><input type="checkbox" id="idTeatro" name="idTeatro" value="Teatro">
+                        <label for="idTeatro">Teatro</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="idCine" name="idCine" value="Cine">
+                        <label for="idCine">Cine</label></td>
+                        <td><input type="checkbox" id="idTelevision" name="idTelevision" value="Television">
+                        <label for="idTelevision">Televisión</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="idMusica" name="idMusica" value="Musica">
+                        <label for="idMusica">Música</label></td>
+                        <td><input type="checkbox" id="idEstudiar" name="idEstudiar" value="Estudiar">
+                        <label for="idEstudiar">Estudiar</label></td>
+                    </tr>
+                </table><br>
+                <label for="valoracion"><b>Valoración de la página (1 al 10):</b></label><br>
+                <input type="range" id="valoracion" name="valoracion" min="1" max="10"><br><br>
+                <label for="idFile"><b>Selecciona un fichero:</b></label><br>
+                <input type="file" id="idFile" name="idFile">
+                <br>
+            </div>
+        </div>
+        <div>
+            <br>
+        <textarea name="idMensaje" rows="10" style="width: 100%;">Comentarios:</textarea><br>
+
+        </div>
+        <!-- Botón de enviar -->
+        <input type="submit" value="Enviar" />
+        <!-- Botón resetear -->
+        <input type="reset" value="Resetear">
+    </form>
+</body>
+</html>

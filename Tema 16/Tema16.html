@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- ESTABLECE EL JUEGO DE CARACTERES -->
+    <meta charset="UTF-8" />
+    <!-- ETIQUETA PARA HACER RESPONSIVE LA PÁGINA, ADAPTACIÓN DE ESCALAS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ESTABLECE UNA DESCRIPCIÓN DE LA PÁGINA -->
+    <meta name="description" content="Curso Html tema 14" />
+    <!-- ESTABLECE PALABRAS CLAVE PARA SER LOCALIZADA LA PÁGINA POR LOS MOTORES DE BÚSQUEDA -->
+    <meta name="keywords" content="HTML, CSS, JavaScript, Meta, Responsive" />
+    <!-- ESTABLECE EL AUTOR DEL ARCHIVO -->
+    <meta name="author" content="Inmaculada García" />
+
+    <title>Tema 16</title>
+    <!-- ICONO DE VENTANA -->
+    <link rel="icon" type="image/x-icon" href="imagenes/favicon.ico" />
+    <!-- HOJA DE ESTILOS EXTERNA-->
+    <link rel="stylesheet" href="estilos/estilos.css" />
+  </head>
+  <body>
+    <h2>CAMPOS DE ENTRADA DE TEXTO</h2>
+    <!-- FORMULARIO DE ENTRADA DE DATOS (CAMPOS DE TEXTO) -->
+    <form action="https://www.w3schools.com/action_page.php" target="_blank">
+      <!-- ETIQUETA LABEL PARA PODER ESCRIBIR ETIQUETAS DE TEXTO -->
+      <label for="idNombre">Nombre:</label><br />
+      <!-- TAG INPUT PARA PODER INTRODUCIR TEXTO EL USUARIO -->
+      <input type="text" name="idNombre" /><br />
+      <label for="idApellidos">Apellidos:</label><br />
+      <input type="text" name="idApellidos" />
+      <!-- USO DE RADIO BUTTON -->
+      <br /><br />
+      <label>Selecciona tu especialidad:</label>
+      <br />
+      <input type="radio" id="idDAW" name="idCICLO" value="DAW" />
+      <label for="idDAW">DAW</label><br />
+      <input type="radio" id="idDAM" name="idCICLO" value="DAM" />
+      <label for="idDAM">DAM</label><br />
+      <input type="radio" id="idASIR" name="idCICLO" value="ASIR" />
+      <label for="idASIR">ASIR</label>
+      <br /><br />
+      <!-- USO DE CHECKBOXES -->
+      <label>Selecciona las opciones que correspondan:</label>
+      <br />
+      <input type="checkbox" id="idCarnet" name="idCarnet" value="carnet" />
+      <label for="idCarnet">Tengo carnet de conducir</label><br />
+      <input
+        type="checkbox"
+        id="idVehiculo"
+        name="idVehiculo"
+        value="Vehiculo"
+      />
+      <label for="idVehiculo">Tengo vehículo propio</label><br />
+      <input type="checkbox" id="idIngles" name="idIngles" value="Ingles" />
+      <label for="idIngles">Domino el inglés</label><br /><br />
+      <!-- BOTON SUBMIT -->
+      <input type="submit" value="Enviar" />
+    </form>
+    <br /><br />
+    <h2>FORMULARIO DE ENVIO DE 2 CAMPOS</h2>
+    <form
+      action="https://www.w3schools.com/action_page.php"
+      target="_blank"
+      autocomplete="off"
+    >
+      <label for="idNombre">Nombre:</label>
+      <input type="text" id="idNombre" name="idNombre" value="Maria" /><br />
+      <label for="idApellidos">Apellidos:</label>
+      <input
+        type="text"
+        id="idApellidos"
+        name="idApellidos"
+        value="Dorado Sanz"
+      /><br /><br />
+      <!-- BOTON SUBMIT -->
+      <input type="submit" value="Enviar" />
+    </form>
+    <br /><br />
+    <h2>FORMULARIO CON CAMPO DE LISTA DESPLEGABLE</h2>
+    <form action="https://www.w3schools.com/action_page.php">
+      <label for="idLista">Seleccione asignatura:</label><br />
+      <select id="idLista" name="idLista"> 
+        <!-- size="4" multiple, esto es arriba para que aparezcan mas por lista --> 
+        <option value="lm">Lenguaje de Marcas</option>
+        <option value="pr">Programación</option>
+        <option value="so">Sistemas operativos</option>
+        <option value="en" selected>Entornos</option>
+        <!-- el selected nos dice que es la primera opcion que aparecera en nuestra lista -->
+        <option value="bbdd">Base de datos</option>
+      </select>
+      <br /><br />
+      <input type="submit" value="Enviar" />
+    </form>
+    <br /><br />
+    <h2>FORMULARIO CON CAMPO DE LISTA DESPLEGABLE (AGRUPADA POR CATEGORÍAS)</h2>
+    <form action="https://www.w3schools.com/action_page.php">
+      <label for="idLista">Seleccione asignatura:</label><br />
+      <select id="idLista" name="idLista" size="7" multiple> 
+        <!-- Con el optgroup dividimos por categorias, el label es el titulo -->
+       <optgroup label="Asignaturas de primero">
+        <option value="lm">Lenguaje de Marcas</option>
+        <option value="pr">Programación</option>
+        <option value="so">Sistemas operativos</option>
+        <option value="en" selected>Entornos</option>
+        <option value="bbdd">Base de datos</option>
+      </optgroup>
+      <optgroup label="Asignaturas de segundo">
+        <option value="dm">Dispositivos móviles</option>
+        <option value="sa">Sistemas avanzados</option>
+        <option value="in">Inglés</option>
+      </optgroup>
+      </select>
+      <br /><br/>
+      <input type="submit" value="Enviar" />
+    </form>
+
+  </body>
+</html>

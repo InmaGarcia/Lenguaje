@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- ETIQUETA PARA HACER RESPONSIVE LA PÁGINA, ADAPTACIÓN DE ESCALAS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tema 12 html</title>
+    <!-- ICONO DE VENTANA -->
+    <link rel="icon" type="image/x-icon" href="imagenes/favicon.ico" />
+    <!-- HOJA DE ESTILOS EXTERNA-->
+    <link rel="stylesheet" href="estilos/estilos.css" />
+    <style>
+      .city_interna {
+        background-color: rgb(46, 21, 157);
+        color: white;
+        border: 2px solid black;
+        margin: 20px;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+<!-- HOJA DE ESTILO INTERNA PARA CAPAS -->
+    <div class="city_interna">
+     <h2>Londres</h2>
+     <p>Londres es la capital de Inglaterra.</p>
+    </div>
+<!-- HOJAS DE ESTILO EXTERNAS PARA CAPAS -->
+    <div class="city_externa">
+     <h2>Madrid</h2>
+     <p>Madrid es la capital de España.</p>
+    </div>
+<!-- HOJA DE ESTILOS EXTERNA PARA TEXTOS -->
+    <h1>Mi <span class="note">Importante </span>cabecera</h1>
+    <p>Esto es un <span class="note">Texto resaltado</span> de un párrafo.</p>
+
+    <h3>Cabecera 1</h3>
+    <p>Esta es la cabecera uno</p>
+    <h3>Cabecera 2</h3>
+    <p>Esta es la cabecera dos</p>
+    <h3>Cabecera 3</h3>
+    <p>Esta es la cabecera tres</p>
+
+<!-- HOJA DE ESTILOS REPETIDA -->
+<h2 class="main aux">MULTIPLES CLASES</h2>
+
+  </body>
+</html>

@@ -1,0 +1,35 @@
+h1 {
+    text-align: center;
+    color: #3c4673;
+    padding: 10px;
+    border-radius: 4px;
+}
+.container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.nivel1 {
+    background-color: #386880;
+    color:white;
+}
+
+.nivel2 {
+    background-color: #1c3d5a;
+    margin-left: 20px;
+}
+
+.nivel3 {
+    background-color: #778da1;
+ margin-left: 40px;
+}
+
+h2 {
+    background-color: #987d3e;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 4px;
+}

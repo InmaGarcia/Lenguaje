@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- ESTABLECE EL JUEGO DE CARACTERES -->
+    <meta charset="UTF-8">
+    <!-- ETIQUETA PARA HACER RESPONSIVE LA PÁGINA, ADAPTACIÓN DE ESCALAS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ESTABLECE UNA DESCRIPCIÓN DE LA PÁGINA -->
+    <meta name="description" content="Curso Html tema 14">
+    <!-- ESTABLECE PALABRAS CLAVE PARA SER LOCALIZADA LA PÁGINA POR LOS MOTORES DE BÚSQUEDA -->
+    <meta name="keywords" content="HTML, CSS, JavaScript, Meta, Responsive">
+    <!-- ESTABLECE EL AUTOR DEL ARCHIVO -->
+    <meta name="author" content="Inmaculada García">
+
+    <title>Tema 13.1</title>
+      <!-- ICONO DE VENTANA -->
+      <link rel="icon" type="image/x-icon" href="imagenes/favicon.ico" />
+      <!-- HOJA DE ESTILOS EXTERNA-->
+      <link rel="stylesheet" href="estilos/estilos.css" />
+      <!-- Ponemos URL base comentamos para seguir trabajando -->
+      <!-- <base href="https://www.diariodesevilla.es/" target="_blank"> -->
+      <style>
+        
+      </style>
+</head>
+
+<body>
+    <!-- BOOKMARKS: ENLACES A OTRA PÁGINA Y A ENLACES INTERNOS DESDE UNA PÁGINA HTML -->
+    <div class="enlaces">
+        <h1>ACCEDA A LA PÁGINA DEL TEMA 13</h1>
+        <a href="Tema13.html">Página Tema 13</a>
+        <h1>PULSE LA SECCIÓN A LA QUE DESEA ACCEDER DE LA PÁGINA TEMA13 HTML</h1>
+        <a href="Tema13.html#C1">Tema 13: Sección 1</a> <br>
+        <a href="Tema13.html#C2">Tema 13: Sección 2</a> <br>
+        <a href="Tema13.html#C3">Tema 13: Sección 3</a> <br>
+    </div>
+    
+    <!-- USO DE IFRAME PARA CARGAR UNA PÁGINA -->
+    <div class="enlaces">
+        <h1>ESTAMOS EN LA PÁGINA TEMA13_1</h1>
+        <P>Vamos a mostrar la página de CEU dentro de nuestro iframe</P>
+    </div>
+    <iframe src="https://www.ceuandalucia.es/" style="height: 300px;width: 100%;border: none;" title="CeuAndalucia"></iframe>
+    
+    <!-- NOMBRAR EL IFRAME Y LUEGO CARGARLO EN OTRA PARTE -->
+    <a href="https://www.diariodesevilla.es/" target="iframe_buscador">Abrir diario de Sevilla en el frame de abajo</a>
+
+    <iframe name="iframe_buscador" style="height: 300px;width: 100%;border: 2px solid green;"
+        title="abrir buscador"></iframe>
+
+        <!-- URL BASE PARA DIRECIONARNOS esta en el head-->
+        <!-- <a href="">Abrir Diario de Sevilla</a>
+        <hr>
+        <a href="aljarafe">Abrir Diario de Sevilla noticias Aljarafe</a>
+        <hr>
+        <a href="economia">Abrir Diario de Sevillaapartado economía</a> -->
+        <hr>
+        <!-- USO RESPONSIVE DE IMÁGENES -->
+        <img src="imagenes/paisaje.avif" style="max-width: 100%;">
+        <!-- Mi imagen no sale porque tenemos de base una url que esta cojiendo tambien nuestro src
+        por lo que no ubica bien la imagen -->
+        
+
+</body>
+</html>

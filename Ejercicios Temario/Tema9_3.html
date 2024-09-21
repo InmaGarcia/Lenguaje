@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 9_3</title>
+    <link rel="icon" type="image/x-icon" href="imagenes/favicon.ico">
+    <style>
+       /* table{
+             el border collapse es para que no salga ninguna linea en la tabla 
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th,
+        td {
+            text-align: left;
+            padding: 8px;
+        }
+         Propiedad Zebra donde ponemos un color de fondo el even para las pares el odd para impares 
+        tr:nth-child(even){
+            background-color: rgb(214, 238, 238,0.3);
+        }
+        tr:nth-child(odd){
+            background-color: rgba(214, 170, 238, 0.3);
+        }
+         :nth-child() esto seria lo que realmente necesitamos, delente ponemos tdy hriamos las columnas 
+        td:nth-child(odd),
+        th:nth-child(even) {
+            background-color: rgba(221,221,170,0.3);
+        }
+        Usaremos colores de transparencia, rgba el a es el nivel de transparencia va de 0 a 1*/
+        td {
+            border-bottom: 1px solid rgb(221,221,221);
+        }
+        table {
+            border-collapse: collapse;
+        }
+        /* :hover para resaltar algo cuando pasas el cursor por encima */
+        tr:hover {
+            background-color: #D6EEEE;
+        }
+        th:hover {
+            background-color: rgb(238, 123, 223);
+        }
+        td:hover {
+            background-color: rgb(86, 218, 174);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr style="background-color: white;">
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Pagado</th>
+        </tr>
+        <tr>
+            <td>Pedro</td>
+            <td>García</td>
+            <td>200€</td>
+        </tr>
+        <tr>
+            <td>Silvia</td>
+            <td>Hurtado</td>
+            <td>150€</td>
+        </tr>
+        <tr>
+            <td>Laura</td>
+            <td>Noesta</td>
+            <td>450€</td>
+        </tr>
+        <tr>
+            <td>Antonio</td>
+            <td>Pavon</td>
+            <td>250€</td>
+        </tr>
+    </table>
+    <br><br>
+    <table style="width: 100%;">
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Pagado</th>
+        </tr>
+        <tr>
+            <td>Pedro</td>
+            <td>García</td>
+            <td>200€</td>
+        </tr>
+        <tr>
+            <td>Silvia</td>
+            <td>Hurtado</td>
+            <td>150€</td>
+        </tr>
+        <tr>
+            <td>Laura</td>
+            <td>Noesta</td>
+            <td>450€</td>
+        </tr>
+        <tr>
+            <td>Antonio</td>
+            <td>Pavon</td>
+            <td>250€</td>
+        </tr>
+    </table>
+    
+    
+</body>
+</html>

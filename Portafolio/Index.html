@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- ESTABLECE EL JUEGO DE CARACTERES -->
+    <meta charset="UTF-8">
+    <!-- ESTIQUETA PARA RESPONSIVE, ADAPTACIÓN DE ESCALAS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- DESCRIPCIÓN DE LA PÁGINA -->
+    <meta name="description" content="Portafolio Inmaculada García">
+    <!-- AUTOR DE LA PÁGINA -->
+    <meta name="author" content="Inmaculada García">
+    <title>Inmaculada García</title>
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="imagenes/favicon.ico">
+    <!-- Introduzco la hoja de estilos -->
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <script>
+        // llamamos la funcion le ponemos un nombre y entre parentesis los valores de entrada
+        function mostrar_mensaje(mensaje) {
+          alert(mensaje);
+        }
+      </script>
+</head>
+<body>
+    <!-- CABECERA -->
+    <header style="background-image: url(imagenes/fondo.jpg);">
+        <div>
+            <p>Inmaculada García</p>
+            <p>Team Leader Manager | Desarrollador Web</p>
+        </div>
+        
+        <div style="text-align: center;">
+            <img src="imagenes/AscensoNova.jpeg" alt="Inmaculada con premio" width="70%">
+        </div>
+    </header>
+    
+    <!-- MENU DEL CONTENIDO DE LA PAGINA-->
+    <nav>
+        <ul class="menu">        
+            <li><a href="#inicio">Inicio</a></li>       
+            <li><a href="#sobremi">Sobre mi</a></li>               
+            <li><button type="button" onclick="alert('Esta es mi lista de música de fondo favorita para que te acompañe')" class="buttonmenu">
+                <a href="https://www.youtube.com/watch?v=DMOLgLeH-XY&list=LL" target="_blank"><img src="imagenes/iniciales.png" alt="Iniciales I G" width="30%" style="border-radius: 50%;" id="ir-arriba"></a>
+               </button></li>               
+            <li><a href="#formacion">Formación</a></li>               
+            <li><a href="#experiencia">Experiencia</a></li>                             
+        </ul>
+    </nav>
+    <!-- CURSOR QUE TE DEVUELVE AL MENU -->
+    <div class="ir-arriba"><a href="#ir-arriba"><img src="imagenes/hasta-chevron.png" width="40px"></a></div>
+
+    <!-- INICIO - IMAGEN- TEXTO QUE HABLA DE MI- BOTON DE DESCARGA CV -->
+    <section id="inicio">
+        <p><b> <img src="imagenes/flechas.png" alt="flechas" width="30px">¿Quién soy?</b></p>
+        <div class="inicio">
+            <img src="imagenes/cara.jpg" alt="Rostro Inmaculada" width="50%">
+            <p>Me llamo <b>Inmaculada García</b> y soy estudiante en CEU Andalucia en el ciclo superior de Desarrollo Web. 
+            Nací en Sevilla, pero toda mi gente es de Huelva, ciudad con la que me identifico y en la que me gusta pasar todos mis días libre. 
+            Me gustan las charlas relajadas con un buen café, los libros románticos empalagosos, dibujar o aprender nuevas manualidades y reir, me encanta reir.
+            Si le preguntas a alguien que me conoce como soy te dirá que muy tranquila, resolutiva, risueña y que hablo hasta con las piedras, esto último hay 
+            quien lo ve como defecto y otros como virtud. <br><br>
+            <button class="buttonIndex"><a href= "descargar/CV.pdf" download= "CV.pdf" > Descargar CV </a></button>
+        </p>        
+        </div>
+    </section>
+    <!--SOBRE MI -->
+    <article id="sobremi">
+        <p><b><img src="imagenes/flechas.png" alt="flechas" width="30px">Sobre mí</b></p>
+        <div class="hab">
+            <!-- INFORMACION PERSONAL -->
+            <div><p><b><u>Información Personal</u></b></p>
+                <dl>
+                    <dt>Cumpleaños
+                        <dd>16/10/1990
+                    <dt>Email
+                        <dd>icgarciagarcia1990@gmail.com
+                    <dt>Teléfono
+                        <dd>675737589
+                    <dt>Dirección
+                        <dd>Castilleja de la cuesta
+                </dl>
+            </div>
+            <!-- HABILIDADES LABORALES -->
+            <div><p><b><u>Habilidades</u></b></p>
+                <dl>
+                    <dt>HTML
+                        <dd>&hearts;&hearts;&hearts;♡♡
+                    <dt>JAVA
+                        <dd>&hearts;&hearts;&hearts;&hearts;♡
+                    <dt>SQL
+                        <dd>&hearts;&hearts;&hearts;♡♡
+                    <dt>TRABAJO EN EQUIPO
+                        <dd>&hearts;&hearts;&hearts;&hearts;&hearts;
+                </dl>
+            </div> 
+            <!-- AFICIONES PERSONALES -->
+            <div><p><b><u>Aficiones</u></b></p>
+                <dl>
+                    <dt>Lectura
+                        <dd>&hearts;&hearts;&hearts;&hearts;&hearts;
+                    <dt>Viajar
+                        <dd>&hearts;&hearts;&hearts;&hearts;♡
+                    <dt>Café con amigos
+                        <dd>&hearts;&hearts;&hearts;&hearts;♡
+                    <dt>Series
+                        <dd>&hearts;&hearts;&hearts;♡♡
+                </dl>
+            </div>               
+        </div>
+    </article>
+    <!-- FORMACION -->
+    <article id="formacion">
+        <p><b><img src="imagenes/flechas.png" alt="flechas" width="30px">Formación</b></p>
+        <!-- DESPLEGABLE CON LA FORMACION DENTRO VAN LOS IFRAME -->
+        <details>
+            <summary style="color:rgb(105, 23, 103)">B.V.M. Irlandesas Aljarafe &rarr; Primaria y Secundaria (1996 - 2007)</summary>
+                <a href="https://irlandesasaljarafe.org/es/" target="iframe_irlandesas" class="info"><u>Accede a su sitio web</u></a>
+            
+            <iframe name="iframe_irlandesas" title="Web irlandesa"></iframe></details>
+        <details>    
+            <summary style="color:rgb(105, 23, 103)">IES Politécnico &rarr; Bachillerato artístico-tecnológico (2007 - 2009)</summary>
+                <a href="https://www.iespolitecnico.es/" target="iframe_politecnico" class="info"><u>Accede a su sitio web</u></a>
+            
+            <iframe name="iframe_politecnico" title="Web politecnico"></iframe></details>
+        <details>
+            <summary style="color:rgb(105, 23, 103)">Escuela de arte de Sevilla &rarr; Ciclo de Grado Medio de Orfebrería y platería (2010 - 2012)</summary>
+                <a href="https://nueva.escueladeartedesevilla.es/" target="iframe_escuelaarte" class="info"><u>Accede a su sitio web</u></a>
+            
+            <iframe name="iframe_escuelaarte" title="Web Escuela de arte"></iframe></details>
+         
+    </article>
+    <!-- EXPERIENCIA -->
+    <article id="experiencia">
+        <p><b><img src="imagenes/flechas.png" alt="flechas" width="30px">Experiencia</b></p>
+        <div class="hab">
+            <div><p><b>Agente de Seguros</b></p>
+                <ul>
+                    <li>NorteHispana Nervión</li>
+                    <li>Abril 2024</li>
+                    <li>Captación de clientes</li>
+                    <li>Registro de siniestros</li>
+                    <li>Acompañamiento tanatorios</li>
+                    <li>Atención al cliente</li>
+                </ul>
+            </div>
+            <div><p><b>BackOffice</b></p>
+                <ul>
+                    <li>Hispalense de servicios y consultas</li>
+                    <li>Abril 2023 - Febrero 2024</li>
+                    <li>Rappel agentes</li>
+                    <li>Incidencias</li>
+                    <li>Regulación de producción</li>
+                </ul>
+            </div>
+            <div><p><b>Team Leader Manager</b></p>
+                <ul>
+                    <li>Andalucia Oriental SL</li>
+                    <li>Marzo 2020 - Diciembre 2022</li>
+                    <li>Coordinacion de las oficinas</li> 
+                    <li>Formación Team Leaders</li>
+                    <li>Supervision equipos de trabajo</li>
+                </ul>
+            </div>
+        </div>                   
+    </article>
+     <!-- Carta que gira -->
+        <div class="card">
+            <div class="face front">
+                <img src="imagenes/MiEquipo.jpeg" alt="Mi equipo">
+                <h4>Más información</h4>
+            </div>
+            <div class="face back">
+                <h1>Mi experiencia laboral</h1>
+                <p>Se centra sobre todo en el trato humano. Al final todo era formarme bien para dar la información 
+                    clara y concisa a la otra persona y saber responder con comprensión pero firme ante cualquier situación. </p> 
+            </div>
+        </div>      
+    <!-- pie de pagina -->
+    <footer id="contacto">
+        <!-- MENU secundario para formularios-->
+    <ul class="menu2">
+        <li><a href="Sugerencias.html">Sugerencias</a></li>
+        <li><a href="https://www.instagram.com/inmy.garcia/"><img src="imagenes/iniciales.png" alt="Iniciales I G" width="50px" style="border-radius: 50%;"></a></li>
+        <li><a href="Encuestas.html">Encuestas</a></li> 
+    </ul>
+        
+    </footer>
+</body>
+</html>

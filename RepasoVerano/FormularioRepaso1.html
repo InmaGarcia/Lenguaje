@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- ESTABLECE EL JUEGO DE CARACTERES -->
+    <meta charset="UTF-8">
+    <!-- ESTIQUETA PARA RESPONSIVE, ADAPTACIÓN DE ESCALAS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- DESCRIPCIÓN DE LA PÁGINA -->
+    <meta name="description" content="Portafolio Inmaculada García">
+    <!-- AUTOR DE LA PÁGINA -->
+    <meta name="author" content="Inmaculada García">
+    <title>Inmaculada García</title>
+     <!-- Introduzco la hoja de estilos -->
+     <link rel="stylesheet" href="estilos/estiloform1.css">
+</head>
+<body>
+
+<form action="https://www.w3schools.com/action_page.php" target="_blank">
+
+    <label for="idNombre">Nombre:</label>   
+    <input type="text" name="idNombre" maxlength="30">
+    
+    <label for="email">Email*:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="idLista">Asunto</label>
+    <select id="idLista" name="idLista" size="3"> 
+            <option value="Presup">Pedir Presupuesto Web</option>
+            <option value="Cita">Solicitar Cita Previa</option>
+            <option value="Otros">Otros</option>
+    </select>
+
+    <label for="idConocido">¿Cómo nos ha conocido?</label>
+    <div class="marketing">
+        <input type="checkbox" id="idAmigo" name="idAmigo" value="Amigo">
+        <label for="idAmigo">Un amigo</label>
+        <input type="checkbox" id="idGoogle" name="idGoogle" value="Google">
+        <label for="idGoogle">Googleando</label>
+        <input type="checkbox" id="idBuzon" name="idBuzon" value="Buzon">
+        <label for="idBuzon">Buzoneo</label>
+        <input type="checkbox" id="idOtros" name="idOtros" value="Otros">
+        <label for="idOtros">Otros</label>
+    </div>
+    <label for="idMensaje">Escribe tu mensaje</label>
+    <textarea name="idMensaje" maxlength="300"></textarea>
+
+    <input type="checkbox" value="Acepta_RGPD" id="rgpd" required><label for="rgpd" class="rgpd">He leído y acepto el <a href="#" target="_blanck">aviso legal y la política de privacidad</a>.</label>
+</form>
+</html>

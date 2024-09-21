@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- ESTABLECE EL JUEGO DE CARACTERES -->
+    <meta charset="UTF-8" />
+    <!-- ETIQUETA PARA HACER RESPONSIVE LA PÁGINA, ADAPTACIÓN DE ESCALAS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ESTABLECE UNA DESCRIPCIÓN DE LA PÁGINA -->
+    <meta name="description" content="Curso Html tema 14" />
+    <!-- ESTABLECE PALABRAS CLAVE PARA SER LOCALIZADA LA PÁGINA POR LOS MOTORES DE BÚSQUEDA -->
+    <meta name="keywords" content="HTML, CSS, JavaScript, Meta, Responsive" />
+    <!-- ESTABLECE EL AUTOR DEL ARCHIVO -->
+    <meta name="author" content="Inmaculada García" />
+
+    <title>Tema 15</title>
+    <!-- ICONO DE VENTANA -->
+    <link rel="icon" type="image/x-icon" href="imagenes/favicon.ico" />
+    <!-- HOJA DE ESTILOS EXTERNA-->
+    <link rel="stylesheet" href="estilos/estilos1.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Noticias Deportivas</h1>
+    </header>
+
+    <aside>
+      <h2>Secciones</h2>
+      <ul>
+        <li><a href="#futbol">Fútbol</a></li>
+        <!--la # es porque vamos a ir a una referencia interna-->
+        <li><a href="#baloncesto">Baloncesto</a></li>
+        <li><a href="#tenis">Tenis</a></li>
+      </ul>
+    </aside>
+
+    <article>
+      <h2>Última noticia: Lionel Messi firma con un nuevo club</h2>
+      <figure>
+        <img
+          src="https://fcb-abj-pre.s3.amazonaws.com/img/jugadors/MESSI.jpg"
+        />
+        <figcaption>Lionel Messi</figcaption>
+      </figure>
+      <p>
+        El Sevilla club de futbol contrata a Messi para la siguiente temporada
+        de la liga española de futbol
+      </p>
+    </article>
+    <section>
+      <h2>Otras noticias</h2>
+      <article id="futbol">
+        <details>
+          <!--Con esto decimos que queremos un menu desplegable-->
+          <summary>Real Madrid gana la copa del Rey</summary>
+          <!--Nombre del desplegable-->
+          <figure>
+            <!--contenido dentro del desplegable-->
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/9/98/Escudo_real_madrid_1941.png"
+              alt="Real Madrid"
+            />
+            <figcaption>Real Madrid</figcaption>
+          </figure>
+          <p>
+            El Real Madrid se impuso por 4 goles a 2 a a Real Sociedad para
+            imponerse en la final de la copa del rey.
+          </p>
+        </details>
+      </article>
+      <article id="baloncesto">
+        <details>
+          <summary>Golden State Warriors gana el campeonato de la NBA</summary>
+          <figure>
+            <img
+              src="https://www.teleadhesivo.com/es/img/nba036-png/folder/products-detalle-png/pegatinas-coches-motos-nba---golden-state-warriors-escudo.png"
+              alt="Golden State Warriors"
+            />
+            <figcaption>Golden State Warriors</figcaption>
+          </figure>
+          <p>
+            En el último partido de la liga NBA los Golden State Warrios
+            aplastaron en la final a los Chicago Bulls por un marcador de 112 a
+            82.
+          </p>
+        </details>
+      </article>
+      <article id="tenis">
+        <details>
+          <summary>
+            Jessica Bouzas pasa ronda en La Bisbal y es 'top100' virtual de la
+            WTA
+          </summary>
+          <figure>
+            <img
+              src="https://phantom-marca.unidadeditorial.es/80b9ce5f94a89e80ef16cafd184bf8b6/resize/660/f/webp/assets/multimedia/imagenes/2024/04/02/17120758122151.jpg"
+              alt="Jessica Bouzas"
+            />
+            <figcaption>Jessica Bouzas</figcaption>
+          </figure>
+          <p>
+            La gallega, campeona el domingo del WTA 125 de Antalya, ha debutado
+            este martes con victoria en el torneo de la misma categoría de La
+            Bisbal
+          </p>
+        </details>
+      </article>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Noticias Deportivas. Todos los derechos reservados.</p>
+      <p>&#128512; Welcome.</p>
+    </footer>
+  </body>
+</html>

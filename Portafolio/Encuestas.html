@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- ESTABLECE EL JUEGO DE CARACTERES -->
+    <meta charset="UTF-8">
+    <!-- ESTIQUETA PARA RESPONSIVE, ADAPTACIÓN DE ESCALAS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- DESCRIPCIÓN DE LA PÁGINA -->
+    <meta name="description" content="Portafolio Inmaculada García">
+    <!-- AUTOR DE LA PÁGINA -->
+    <meta name="author" content="Inmaculada García">
+    <title>Encuesta</title>
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="imagenes/favicon.ico">
+    <!-- Introduzco la hoja de estilos -->
+    <link rel="stylesheet" href="estilos/estilos.css">
+</head>
+<body>
+    <header>             
+        <img src="imagenes/iniciales.png" alt="Iniciales I G" class="logo">
+        <p>¡Tu opinión me ayuda mejorar!</p> 
+    </header>
+
+    <form action="https://www.w3schools.com/action_page.php" target="_blank">
+        <div class="formulario">
+            <div>
+                <!-- PRIMERA PREGUNTA -->
+                <label for="navegar"><b>1. ¿Fué fácil navegar por mi portafolio?</b></label><br>
+                <input type="radio" id="idSi" name="navegar" value="SI">
+                <label for="Si">Sí</label><br>
+                <input type="radio" id="idNo" name="navegar" value="NO">
+                <label for="No">No</label><br>
+                <input type="radio" id="idRegular" name="navegar" value="REGULAR">
+                <label for="Regular">Regular</label><br><br>
+
+                <!-- SEGUNDA PREGUNTA -->
+                <label for="valoracion"><b>2. Puntúa el diseño visual del 0 al 10:</b></label><br>
+                <input type="range" id="valoracion" name="valoracion" min="1" max="10"><br><br>
+
+                <!-- TERCERA PREGUNTA -->
+                <label for="secciones"><b>3. ¿Qué seccion/es te gustaron más?</b></label><br>
+                <table>
+                    <tr>
+                        <td><input type="checkbox" id="idInicio" name="idInicio" value="Inicio">
+                        <label for="idInicio">Inicio</label></td>
+                        <td><input type="checkbox" id="idSobremi" name="idSobremi" value="Sobremi">
+                        <label for="idSobremi">Sobre mí</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="idFormacion" name="idFormacion" value="Formacion">
+                        <label for="idFormacion">Formación</label></td>
+                        <td><input type="checkbox" id="idExperiencia" name="idExperiencia" value="Experiencia">
+                        <label for="idExperiencia">Experiencia</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="idSugerencias" name="idSugerencias" value="Sugerencias">
+                        <label for="idSugerencias">Sugerencias</label></td>
+                        <td><input type="checkbox" id="idEncuesta" name="idEncuesta" value="Encuesta">
+                        <label for="idEncuesta">Encuesta</label></td>
+                    </tr>
+                </table><br>
+                <!-- CUARTA PREGUNTA -->
+                    <label for="estructura"><b>4. ¿La estructura del portafolio es clara y organizada?</b></label><br>
+                    <input type="radio" id="idSi" name="estructura" value="SI">
+                    <label for="Si">Sí</label><br>
+                    <input type="radio" id="idNo" name="estructura" value="NO">
+                    <label for="No">No</label><br>
+            </div>
+            <div>
+                <!-- QUINTA PREGUNTA -->
+                <label for="multimedia"><b>5. ¿Las imágenes y multimedia utilizadas en el portafolio son de alta calidad y relevantes?</b></label><br>
+                <input type="radio" id="idSi" name="multimedia" value="SI">
+                <label for="Si">Sí</label><br>
+                <input type="radio" id="idNo" name="multimedia" value="NO">
+                <label for="No">No</label><br>
+                <!-- SEXTA PREGUNTA -->
+                <label for="valoracion2"><b>6. Cómo me refleja el portafolio personal y profesionalmente:</b><br>valora del 0 al 10</label><br>
+                <input type="range" id="valoracion" name="valoracion" min="1" max="10"><br><br>
+                <!-- SEPTIMA PREGUNTA -->
+                <label for="recomendacion"><b>7. ¿Recomendarías este portafolio a otras personas interesadas en tu campo?</b></label><br>
+                <input type="radio" id="idSi" name="recomendacion" value="SI">
+                <label for="Si">Sí</label><br>
+                <input type="radio" id="idNo" name="recomendacion" value="NO">
+                <label for="No">No</label><br>
+                <!-- OCTAVA PREGUNTA -->
+                <label for="mas"><b>8. ¿Qué cosas añadirías al portafolio?</b></label><br>
+                <table>
+                    <tr>
+                        <td><input type="checkbox" id="idInfo" name="idInfo" value="Informacion">
+                        <label for="idInfo">Informacion General</label></td>
+                        <td><input type="checkbox" id="idMultimedia" name="idMultimedia" value="Multimedia">
+                        <label for="idMultimedia">Multimedia</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="idSecciones" name="idSecciones" value="Secciones">
+                        <label for="idSecciones">Secciones</label></td>
+                        <td><input type="checkbox" id="idExperiencia" name="idExperiencia" value="Experiencia">
+                        <label for="idExperiencia">Información en experiencia</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="idEducacion" name="idEducacion" value="Educacion">
+                        <label for="idEducacion">Información en educación</label></td>
+                        <td><input type="checkbox" id="idOrden" name="idOrden" value="Orden">
+                        <label for="idOrden">Orden y color</label></td>
+                    </tr>
+                </table><br>
+
+            </div>
+        </div>
+        <div>
+            <br>
+        <textarea name="idMensaje" rows="5" style="width: 100%;">Ayúdame a mejorar:</textarea><br>
+
+        </div>
+        <!-- Botón de enviar -->
+        <input type="submit" value="Enviar" />
+        <!-- Botón resetear -->
+        <input type="reset" value="Resetear">
+    </form>
+</body>
+</html>

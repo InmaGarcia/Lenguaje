@@ -1,0 +1,31 @@
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:blanchedalmond;
+    text-align: center;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    color:antiquewhite;
+    padding: 2px;
+    color:black;
+}
+td {
+    padding: 2px;
+    
+}
+
+tr:nth-child(even){
+    background-color: rgba(246, 204, 204, 0.7);
+}
+
+tr:nth-child(odd){
+    background-color: rgba(241,216,216,0.7);
+}
+
+a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: red;
+}
+

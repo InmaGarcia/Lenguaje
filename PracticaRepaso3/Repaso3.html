@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!-- ESTABLECE EL JUEGO DE CARACTERES -->
+        <meta charset="UTF-8" />
+        <!-- ETIQUETA PARA HACER RESPONSIVE LA PÁGINA, ADAPTACIÓN DE ESCALAS -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- ESTABLECE UNA DESCRIPCIÓN DE LA PÁGINA -->
+        <meta name="description" content="Repaso tercer trimestre" />
+        <!-- ESTABLECE PALABRAS CLAVE PARA SER LOCALIZADA LA PÁGINA POR LOS MOTORES DE BÚSQUEDA -->
+        <meta name="keywords" content="HTML, CSS, JavaScript, Práctica" />
+        <!-- ESTABLECE EL AUTOR DEL ARCHIVO -->
+        <meta name="author" content="Inmaculada García" />
+    
+        <title>Repaso examen 3º Trimestre</title>
+        <!-- ICONO DE VENTANA -->
+        <link rel="icon" type="image/x-icon" href="imagenes/favicon.ico" />
+        <!-- HOJA DE ESTILOS EXTERNA-->
+        <link rel="stylesheet" href="estilos/estilo.css" />
+        <script>
+                function actualizaTexto(texto) {
+                    document.getElementById("idMuestraRango").value = texto;
+                }
+        </script>
+      </head>
+<body>
+    <!-- MENU DE LA IZQ -->
+    <aside>
+        <h2 style="text-align: center;">Menú</h2>
+        <nav class="menu">
+            <ul>
+            <li><a href="#noticias">Noticias</a></li>
+            <li><a href="#registro">Registro</a></li>
+            <li><a href="#accesosede">Acceso sede</a></li>
+            </ul>
+        </nav>
+      </aside>
+      <!-- NOTICIAS, CON IMAGEN PIDE DE IMAGEN Y DESCRIPCIÓN -->
+      <section>
+        <article class="noticias" id="noticias">
+            <h2>NOTICIAS</h2>
+            <h3>Asiste como testigo a la boda de su mejor amigo y acaba casado con la novia</h3>
+            <figure>
+                <img
+                    src="https://www.garciajoyeros.com/blog/wp-content/uploads/2018/06/anillos_boda-963x504.jpg"
+                />
+                <figcaption><b>Novios dandose el sí quiero</b></figcaption>
+            </figure>
+            <p style="text-align: left;padding: 15px;">
+            El caso, del todo real, ha dado pie a toda una lluvia de anécdotas de personas que han sufrido errores
+            administrativos similares y peores. Después de firmar correctamente cada uno en su lugar, llega la 
+            administración y cambia el orden de los nombres. Esto ha pasado en Argentina. El error ya resuelto, ha 
+            pillado por sorpresa a todo el mundo.
+            </p>
+        </article>
+    </section>
+    <br><br>
+    <section class="formularios" id="registro">
+            <!-- FORMULARIO -->
+            <form action="https://www.w3schools.com/action_page.php" target="_blank">
+                <fieldset>
+                <legend><b>Registro</b></legend>
+
+                <label for="idNombre"><b>* Nombre:</b></label>
+                <input type="text" name="idNombre"><br><br>
+
+                <label for="idApellidos"><b>* Apellidos:</b></label>
+                <input type="text" name="idApellidos"><br><br>
+
+                <label for="idEmail"><b>* Email:</b></label>
+                <input type="email" id="idEmail" name="idEmail"><br><br>
+
+                <label for="idNacimiento"><b>* Fecha de Nacimiento:</b></label>
+                <input type="date" id="idNacimiento" name="idNacimiento"><br><br>
+
+                <label for="idFile"><b>Fotografía:</b></label>
+                <input type="file" id="idFile" name="idFile"><br><br>
+
+                <label for="idCantidad"><b>* Años cotizados (entre 1 y 35)</b>:</label>
+                <input type="number" id="idCantidad" name="idCantidad" min="1" max="35"><br><br>
+
+                <label for="valoracion"><b>* Nivel de Inglés (entre 1 y 10):</b></label>
+                <input type="range" id="idValoracion" name="idValoracion" min="0" max="10"
+                    onchange="actualizaTexto(this.value);">
+                    <input type="text" id="idMuestraRango" value="" readonly size="2"><br><br>
+
+                <label for="AFICIONES"><b>Idiomas añadidos:</b></label>
+                        <input type="checkbox" id="idFrances" name="idFrances" value="Frances">
+                        <label for="idFrances">Francés</label>
+                        <input type="checkbox" id="idAleman" name="idAleman" value="Aleman">
+                        <label for="idAleman">Alemán</label>
+                        <input type="checkbox" id="idItaliano" name="idItaliano" value="Italiano">
+                        <label for="idItaliano">Italiano</label>
+                        <input type="checkbox" id="idOtros" name="idOtros" value="Otros">
+                        <label for="idOtros">Otros</label><br><br>
+
+                <label for="sexo"><b>Acesso:</b></label><br>
+                <input type="radio" id="idInterno" name="sexo" value="interno">
+                <label for="Interno">Acceso interno</label><br>
+                <input type="radio" id="idExterno" name="sexo" value="externo">
+                <label for="Externo">Acceso externo</label><br><br>
+                <!-- Botón de enviar -->
+                <input type="submit" value="Enviar" />
+            </form>
+    </section>
+    <br><br>
+    <section class="sede" id="accesosede">
+        <form action="https://www.w3schools.com/action_page.php" target="_blank">
+            <fieldset>
+            <legend><b>Acceso sede electrónica:</b></legend>
+
+        <label for="idNombre"><b>Nombre:</b></label><br>
+        <input type="text" id="idNombre" name="idNombre"><br>
+        <br>
+        <label for="idPwd"><b>Password:</b></label><br>
+        <input type="password" id="idPwd" name="idPwd">
+        <br><br>
+        <input type="checkbox" id="idRecordar" name="idRecordar" value="Recordar">
+        <label for="idRecordar">Recordar contraseña</label><br><br>
+        <input type="checkbox" id="idGuardar" name="idGuardar" value="Guardar">
+        <label for="idGuardar">Guardar contraseña</label>
+        <br><br>
+        <input type="submit" value="Iniciar sesión" />
+    </section>
+    <br><br>
+    <footer>
+        <p>&copy; 2024 Inmyta. Todos los derechos reservados.</p>
+        <p>&#128512; Welcome.</p>
+      </footer>
+      <script>
+        getFecha();
+        actualizaTexto("50")
+      </script>
+</body>
+</html>

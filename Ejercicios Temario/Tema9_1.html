@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tema9_1</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-style: dotted;
+      }
+      th,
+      td {
+        background-color: aqua;
+        border-radius: 10px;
+        border-collapse: collapse; /*Linea simple en la tabla*/
+      }
+    </style>
+  </head>
+  <body>
+    <!--Thead, tbody y tfoot, al definirlos se repiten en cada pagina donde aparezca esta tabla-->
+    <table>
+      <thead>
+        <tr>
+          <th>DIA</th>
+          <th>cantidad</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>100</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Suma</td>
+          <td>400</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
